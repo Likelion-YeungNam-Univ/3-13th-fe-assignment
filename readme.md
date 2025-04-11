@@ -1,4 +1,4 @@
-# 3회차 과제
+## 3회차 과제
 -  정리 주제:  :file_folder: [배열](#배열) |  :busts_in_silhouette: [객체](#객체) |   :hammer_and_wrench:  [함수](#함수)
 ---
 :file_folder:
