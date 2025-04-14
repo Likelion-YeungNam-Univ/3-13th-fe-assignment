@@ -27,9 +27,9 @@
 
 예시로 덧셈 기능을 하는 함수를 만들어보자
 
-function sum(left, right) {
-document.write(left + right);
-}
+`function sum(left, right) {
+    document.write(left + right);
+}`
 
 함수 이름은 sum
 이름 옆에 소괄호 안에 left와 right는 매개변수(parameter)
