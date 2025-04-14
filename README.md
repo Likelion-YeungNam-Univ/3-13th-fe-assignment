@@ -28,9 +28,7 @@
 예시로 덧셈 기능을 하는 함수를 만들어보자
 
     function sum(left, right) {
-
         document.write(left + right);
-    
     }
 
 함수 이름은 sum
@@ -74,9 +72,7 @@
 위의 예시를 콜백 함수를 사용해서 바꿔보자
 
     function sum(left, right) {
-
         document.write(left + right);
-    
     }
 
     sum(2,3);
@@ -84,17 +80,13 @@
 이었던 함수의 구조를
 
     function sum(left, right, callback) {
-
         var num = left + right;
-
+        
         callback(num);
-    
     }
 
     function result(res) {
-
         console.log("결과는" + res + "입니다.");
-    
     }
 
     sum(2, 3, result);
@@ -106,17 +98,13 @@ sum을 호출하면 2와 3을 더한 값이 num에 들어가고 이 num의 값�
 화살표 함수를 적용해서 더 간단하게 만들어보면
 
     function sum(left, right, callback) {
-
         var num = left + right;
 
         callback(num);
-    
     }
 
     sum(2, 3, (num) => {
-
         console.log("결과는" + num + "입니다.");
-    
     });
 
 중간에 function result로 함수를 정의하지 않고 sum 함수의 인자로 함수 자체를 화살표 함수 형태로 넣어 축약할 수 있다.
@@ -124,6 +112,7 @@ sum을 호출하면 2와 3을 더한 값이 num에 들어가고 이 num의 값�
 ### 여담으로
 
 함수 자체는 다른 언어에서도 접했기에 익숙했지만, 화살표 함수와 콜백 함수의 형태는 낯설었고 조금 더 공부할 필요가 있음을 느꼈다.
+
 
 ## 배열
 
@@ -150,6 +139,7 @@ sum을 호출하면 2와 3을 더한 값이 num에 들어가고 이 num의 값�
 말 그대로 배열의 길이 즉, 요소의 갯수를 알 수 있다.
 
     fruits.length; -> 3
+
 
 length 속성은 쓰기가 가능하다!
 
@@ -203,11 +193,12 @@ fruits.length = 0;을 사용해서 배열을 비울 수 있다.
 
 간단하게 delete 연산자를 사용할 수 있는데
 
-`delete fruits[3];`
+    delete fruits[3];
 
     fruits; -> ['apple', 'banana', 'coconut', empty, 'melon', 'grape']
 
 그 요소의 값만 지워지고 빈 자리로 남는 걸 볼 수 있다.
+
 
 자리까지 지우고 싶다면 splice() 메소드를 사용하자.
 
@@ -226,6 +217,7 @@ fruits 배열의 2번 인덱스인 "coconut"부터 1개를 삭제해라는 뜻�
 ### 여담으로
 
 배열 또한 다른 언어에서 접할 수 있었기에 이해에 어려움은 없었지만 배열 관련 함수들은 새로운 지식이었고 유용하다고 생각된다.
+
 
 ## 객체
 
