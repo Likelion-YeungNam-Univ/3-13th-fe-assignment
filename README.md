@@ -72,20 +72,21 @@ sum = (left, right) => document.write(left + right);
 위의 예시를 콜백 함수를 사용해서 바꿔보자
 
 function sum(left, right) {
-document.write(left + right);
+    document.write(left + right);
 }
+
+sum(2,3);
 
 이었던 함수의 구조를
 
 function sum(left, right, callback) {
-var num = left + right;
+    var num = left + right;
 
     callback(num);
-
 }
 
 function result(res) {
-console.log("결과는" + res + "입니다.");
+    console.log("결과는" + res + "입니다.");
 }
 
 sum(2, 3, result);
@@ -97,17 +98,19 @@ sum을 호출하면 2와 3을 더한 값이 num에 들어가고 이 num의 값�
 화살표 함수를 적용해서 더 간단하게 만들어보면
 
 function sum(left, right, callback) {
-var num = left + right;
+    var num = left + right;
 
     callback(num);
-
 }
 
 sum(2, 3, (num) => {
-console.log("결과는" + num + "입니다.");
+    console.log("결과는" + num + "입니다.");
 });
 
 중간에 function result로 함수를 정의하지 않고 sum 함수의 인자로 함수 자체를 화살표 함수 형태로 넣어 축약할 수 있다.
+
+### 여담으로
+함수 자체는 다른 언어에서도 접했기에 익숙했지만, 화살표 함수와 콜백 함수의 형태는 낯설고 조금 더 공부할 필요를 느꼈다.
 
 ## 배열
 
