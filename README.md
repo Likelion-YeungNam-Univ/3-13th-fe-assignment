@@ -234,11 +234,11 @@ fruits 배열의 2번 인덱스인 "coconut"부터 1개를 삭제해라는 뜻�
 3. 함수를 포함할 수 있으며, 함수는 일반 함수 선언과 화살표 함수로 정의할 수 있음
 
 
-    const user = {
-        name: "철수",
-        age: "18",
-        isAdult: 'ture'
-    };
+        const user = {
+            name: "철수",
+            age: "18",
+            isAdult: 'ture'
+        };
 
 ### 속성에 접근하는 방법
 
